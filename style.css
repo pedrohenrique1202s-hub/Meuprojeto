@@ -63,3 +63,18 @@ footer {
     color: white;
     text-align: center;
 }
+
+/*parte da jaqueira*/
+section h3{
+    font-size: 22px;
+    color:#1f5c35;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+iframe {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
