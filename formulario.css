@@ -1,3 +1,29 @@
+nav{
+    border:solid 2px #06402b;
+    background-color:#06402b;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+   
+}
+nav a {
+    text-decoration: none;
+    color:white;
+}
+
+p{
+    border:solid 2px grey;
+    margin: 0 auto;
+    margin-bottom:15px;
+    text-align: center;
+    background-color:grey;
+    max-width: 400px; 
+}
+
+
+body{
+    
+}
 .fromulário {
      display: flex;
   flex-direction: column;
@@ -25,7 +51,7 @@ form{
     gap:200px;
     padding:30px;
     margin: 0 auto;
-    
+    background-color: grey;
     
 }
     #enviar{
