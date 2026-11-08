@@ -1,0 +1,9 @@
+create table arvores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    especie_de_arvore VARCHAR(100) NOT NULL,
+    bairro VARCHAR(100) NOT NULL,
+    rua VARCHAR(100) NOT NULL,
+    estado VARCHAR(100) NOT NULL,
+    data_de_plantio DATE NOT NULL,
+    data_de_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+); 

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulário</title>
-    <link rel="stylesheet" href="formulário.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
     <script src="script.js"></script>
@@ -12,9 +12,20 @@
     <div class="formulário">
     <header>
         <h1>Recife verde</h1>
-        <p>CADASTRO DE ÁRVORES</p>
+       
+      <nav>
+         <a href="index.html">Inicio</a>
+          <a href="objetivo.html">Objetivo</a>
+         <a href="jaqueira.html">Parque da jaqueira </a>
+         <a href="boa vitsa.html">Boa vista</a>
+         <a href="contato.html">contato</a>
+         <a href="formulario.html">Formulário</a>
+
+        </nav>
     </header>
-    <form>
+    <form action="conexao.php" method="post">
+      
+        <p>CADASTRO DE ÁRVORES</p>
      <label for="especie">Espécie de árvore:</label>
      <input
      type="text"
@@ -24,6 +35,7 @@
      <div class="bairro">
         <label for="bairro">Bairro:</label>
         <input
+        required
         type="text"
         id="bairro"
         name="bairro"
@@ -54,11 +66,7 @@
         placeholder="10/03/2026">
      </div>
      <div>
-        <input
-        type="button"
-        id="enviar"
-        value="enviar"
-        >
+        <button type="submit" id="enviar">enviar</button>
      </div>
       </form>
     </div>
