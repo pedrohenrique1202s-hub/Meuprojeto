@@ -1,79 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Recife Verde - Formulário</title>
     <link rel="stylesheet" href="formulario.css">
-
-    
 </head>
 <body>
     <script src="script.js"></script>
 
     <div class="formulário">
-    <header>
-        <h1>Recife verde</h1>
-       
-      <nav>
-         <a href="index.html">Inicio</a>
-          <a href="objetivo.html">Objetivo</a>
-         <a href="jaqueira.html">Parque da jaqueira </a>
-         <a href="boa vitsa.html">Boa vista</a>
-         <a href="contato.html">contato</a>
-         <a href="formulario.html">Formulário</a>
-
-        </nav>
-    </header>
-    <form action="conexao.php" method="post">
-      
-        <p>CADASTRO DE ÁRVORES</p>
-     <label for="especie">Espécie de árvore:</label>
-     <input
-     type="text"
-     id="especie"
-     name="especie"
-     placeholder="Ex:Cerejeira"> 
-     <div class="bairro">
-        <label for="bairro">Bairro:</label>
-        <input
-
-
-        type="text"
-        id="bairro"
-        name="bairro"
-        placeholder="Ex: Boa viagem">
-     </div> 
-     <div class="rua">
-        <label for="rua">Rua:</label>
-        <input
-        type="text"
-        id="rua"
-        name="rua"
-        placeholder="Ex:Rua dos alfinetes ">
-     </div>
-     <div>
-        <label for="estado">Estado:</label>
-        <input
-        type="text"
-        id="estado"
-        name="estado"
-        placeholder="Ex:saudável">
-     </div>
-     <div>
-        <label for="data">Data de plantio:</label>
-        <input
-        type="date"
-        id="data"
-        name="data"
-        placeholder="10/03/2026">
-     </div>
-     <div>
-        <button type="submit" id="enviar">enviar</button>
-     </div>
-      </form>
+        <header>
+            <h1>Recife verde</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="objetivo.html">Objetivo</a>
+                <a href="jaqueira.html">Parque da jaqueira </a>
+                <a href="boa vitsa.html">Boa vista</a>
+                <a href="contato.html">contato</a>
+                <a href="formulario.html">Formulário</a>
+            </nav>
+        </header>
+        <form action="conexao.php" method="post">
+            <p>CADASTRO DE ÁRVORES</p>
+            
+            <label for="especie">Espécie de árvore:</label>
+            <input type="text" id="especie" name="especie" placeholder="Ex: Cerejeira"> 
+            
+            <div class="bairro">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" placeholder="Ex: Boa viagem">
+            </div> 
+            
+            <div
+             class="rua">
+                <label for="rua">Rua:</label>
+                <input 
+                type="text" 
+                id="rua" 
+                name="rua" 
+                placeholder="Ex: Rua dos alfinetes">
+            </div>
+            
+            <div>
+                <label for="estado">Estado:</label>
+                <input 
+                type="text" 
+                id="estado" 
+                name="estado" 
+                placeholder="Ex: saudável">
+            </div>
+            
+            <div>
+                <label for="data">Data de plantio:</label>
+                <input 
+                type="date" 
+                id="data" 
+                name="data">
+            </div>
+            
+            <div>
+                <button type="submit" id="enviar">enviar</button>
+            </div>
+        </form>
     </div>
-    
 </body>
 </html>
