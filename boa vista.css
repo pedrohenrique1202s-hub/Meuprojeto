@@ -1,0 +1,14 @@
+
+
+nav{
+    border:solid 2px #06402b;
+    background-color:#06402b;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+   
+}
+nav a {
+    text-decoration: none;
+    color:white;
+}
