@@ -62,4 +62,448 @@ footer {
     background-color: #1f5c35;
     color: white;
     text-align: center;
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde-escuro: #174d35;
+    --verde-principal: #398653;
+    --verde-claro: #a8dca7;
+    --verde-fundo: #edf3e5;
+    --branco: #ffffff;
+    --texto: #26352b;
+    --cinza: #68756b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--verde-fundo);
+    color: var(--texto);
+}
+
+/* CABEÇALHO */
+header {
+    width: 100%;
+    min-height: 90px;
+    background-color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 6%;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-size: 25px;
+    color: var(--verde-escuro);
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto);
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.ativo {
+    color: var(--verde-principal);
+}
+
+/* BOTÕES */
+.botao {
+    display: inline-block;
+    background-color: var(--verde-escuro);
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: var(--verde-principal);
+    transform: translateY(-3px);
+}
+
+/* BANNER PRINCIPAL */
+.hero {
+    min-height: 420px;
+    background:
+        linear-gradient(rgba(23,77,53,0.76),
+        rgba(23,77,53,0.76)),
+        url("imagens/arborizacao-recife.jpg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-conteudo {
+    max-width: 850px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: clamp(32px, 5vw, 55px);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #e5f1e6;
+}
+
+.hero .botao {
+    background-color: var(--verde-claro);
+    color: var(--verde-escuro);
+}
+
+/* PESQUISA */
+.pesquisa {
+    max-width: 550px;
+    margin: 30px auto 0;
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    padding: 6px;
+    overflow: hidden;
+}
+
+.pesquisa input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    padding: 12px 18px;
+    font-size: 14px;
+}
+
+.pesquisa button {
+    border: none;
+    background-color: var(--verde-escuro);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    width: 88%;
+    max-width: 1250px;
+    margin: 55px auto;
+}
+
+.titulo-secao {
+    margin-bottom: 30px;
+}
+
+.titulo-secao h2 {
+    font-size: 28px;
+    color: var(--verde-escuro);
+    margin-bottom: 10px;
+}
+
+.titulo-secao p {
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+/* DESTAQUE */
+.destaque {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #dfe9d3;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.destaque img {
+    width: 40%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.destaque-conteudo {
+    flex: 1;
+}
+
+.destaque h3 {
+    color: var(--verde-escuro);
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.destaque p {
+    color: var(--cinza);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 55px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 17px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-conteudo {
+    padding: 20px;
+}
+
+.card h3 {
+    font-size: 17px;
+    color: var(--verde-escuro);
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--cinza);
+    margin-bottom: 18px;
+}
+
+.card a {
+    text-decoration: none;
+    color: var(--verde-principal);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.card a:hover {
+    color: var(--verde-escuro);
+}
+
+/* ESTATÍSTICAS */
+.estatisticas {
+    background-color: var(--verde-escuro);
+    color: white;
+    padding: 45px 30px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.estatistica h3 {
+    font-size: 32px;
+    color: var(--verde-claro);
+}
+
+.estatistica p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* CHAMADA PARA AÇÃO */
+.convite {
+    background-color: #dcebd5;
+    padding: 45px 25px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.convite h2 {
+    color: var(--verde-escuro);
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.convite p {
+    color: var(--cinza);
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #123b2a;
+    color: white;
+    padding: 50px 8% 20px;
+}
+
+.footer-conteudo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    margin-bottom: 35px;
+}
+
+.footer-coluna h3 {
+    color: var(--verde-claro);
+    margin-bottom: 18px;
+    font-size: 17px;
+}
+
+.footer-coluna p,
+.footer-coluna a {
+    color: #d1dfd3;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.footer-coluna a {
+    display: block;
+    text-decoration: none;
+}
+
+.footer-coluna a:hover {
+    color: var(--verde-claro);
+}
+
+.footer-final {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #c5d5c9;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+
+    header {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .destaque {
+        flex-direction: column;
+    }
+
+    .destaque img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 380px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    main {
+        width: 92%;
+        margin: 35px auto;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .estatisticas {
+        grid-template-columns: 1fr;
+    }
+
+    .destaque img {
+        height: 190px;
+    }
+
+    .footer-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .convite h2 {
+        font-size: 22px;
+    }
 }
